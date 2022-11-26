@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "mancheaxe": "mancheaxe",
+        "upaxetest": "upaxetest",
+        "brightaxe": "brightaxe"
+      },
+      "name": "default"
+    }
+  }
+}

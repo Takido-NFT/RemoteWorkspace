@@ -1,0 +1,9 @@
+{
+  "parent": "japanv:custom/axelight",
+  "textures": {
+    "mancheaxe": "japanv:blocks/mancheaxe",
+    "upaxetest": "japanv:blocks/upaxetest",
+    "brightaxe": "japanv:blocks/brightaxe",
+    "particle": "japanv:items/axelight"
+  }
+}

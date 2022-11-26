@@ -1,0 +1,93 @@
+{
+  "mod_elements": [
+    {
+      "name": "Barbgecko",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbgecko"
+    },
+    {
+      "name": "BarbgeckoModel",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbgecko_model",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BarbgeckoEntityIsHurt",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbgecko_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blood",
+      "type": "particle",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood"
+    },
+    {
+      "name": "Axelight",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axelight"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.japanv.axelight": "Axelight",
+      "item.japanv.barbgecko_spawn_egg": "Barbgecko Spawn Egg",
+      "entity.japanv.barbgecko": "Barbgecko"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "japanv",
+    "modName": "Japanv2",
+    "version": "1.0.0",
+    "author": "byakk, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.japanv",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}
