@@ -20,30 +20,6 @@
       }
     },
     {
-      "name": "BarbgeckoEntityIsHurt",
-      "type": "procedure",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "barbgecko_entity_is_hurt",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Blood",
       "type": "particle",
       "sortid": 4,
@@ -71,6 +47,26 @@
           {
             "name": "entity",
             "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Barblood",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barblood",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }

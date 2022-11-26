@@ -15,7 +15,7 @@ import net.mcreator.japanv.init.JapanvModParticleTypes;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class BarbgeckoEntityIsHurtProcedure {
+public class BarbloodProcedure {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
@@ -31,7 +31,7 @@ public class BarbgeckoEntityIsHurtProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (JapanvModParticleTypes.BLOOD.get()), (entity.getX() + 0), (entity.getY() + 0),
-					(entity.getZ() + 0), 5, 1, 1, 1, 1);
+			_level.sendParticles((SimpleParticleType) (JapanvModParticleTypes.BLOOD.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 5, 1,
+					1, 1, 1);
 	}
 }

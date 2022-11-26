@@ -27,12 +27,7 @@
       "locked_code": false,
       "registry_name": "barbgecko_entity_is_hurt",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {

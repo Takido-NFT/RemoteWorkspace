@@ -4,7 +4,7 @@
       "name": "Barbgecko",
       "type": "livingentity",
       "sortid": 1,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "barbgecko"
     },
@@ -17,22 +17,6 @@
       "registry_name": "barbgecko_model",
       "metadata": {
         "dependencies": []
-      }
-    },
-    {
-      "name": "BarbgeckoEntityIsHurt",
-      "type": "procedure",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "barbgecko_entity_is_hurt",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
       }
     },
     {
@@ -50,6 +34,37 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "axelight"
+    },
+    {
+      "name": "Barblood",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barblood",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Barbhurted",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbhurted",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
@@ -63,7 +78,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Barbs",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "japanv",

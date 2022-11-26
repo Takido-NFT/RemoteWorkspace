@@ -37,7 +37,6 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.japanv.procedures.BarbgeckoThisEntityKillsAnotherOneProcedure;
 import net.mcreator.japanv.init.JapanvModEntities;
 
 public class BarbgeckoEntity extends Monster implements IAnimatable {
@@ -95,12 +94,6 @@ public class BarbgeckoEntity extends Monster implements IAnimatable {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
-	}
-
-	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		BarbgeckoThisEntityKillsAnotherOneProcedure.execute(this);
-		return super.hurt(source, amount);
 	}
 
 	@Override
