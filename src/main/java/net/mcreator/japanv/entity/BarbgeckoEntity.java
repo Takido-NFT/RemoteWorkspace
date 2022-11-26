@@ -38,7 +38,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.japanv.procedures.BarbgeckoThisEntityKillsAnotherOneProcedure;
-import net.mcreator.japanv.procedures.BarbgeckoEntityIsHurtProcedure;
 import net.mcreator.japanv.init.JapanvModEntities;
 
 public class BarbgeckoEntity extends Monster implements IAnimatable {
@@ -100,14 +99,8 @@ public class BarbgeckoEntity extends Monster implements IAnimatable {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		BarbgeckoEntityIsHurtProcedure.execute(source.getEntity());
-		return super.hurt(source, amount);
-	}
-
-	@Override
-	public void die(DamageSource source) {
-		super.die(source);
 		BarbgeckoThisEntityKillsAnotherOneProcedure.execute(this);
+		return super.hurt(source, amount);
 	}
 
 	@Override
