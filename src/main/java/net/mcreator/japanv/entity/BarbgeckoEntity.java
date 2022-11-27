@@ -153,12 +153,12 @@ public class BarbgeckoEntity extends Monster implements IAnimatable {
 	}
 
 	private <E extends IAnimatable> PlayState attackingPredicate(AnimationEvent<E> event) {
-		double d1 = this.getX()-10 - this.xOld; //Base: double d1 = this.getX() - this.xOld;
+		double d1 = this.getX() - this.xOld; //Base: double d1 = this.getX() - this.xOld;
 
-		double d0 = this.getZ()-10 - this.zOld; //Base: double d0 = this.getZ() - this.zOld;
+		double d0 = this.getZ() - this.zOld; //Base: double d0 = this.getZ() - this.zOld;
 
 		float velocity = (float) Math.sqrt(d1 * d1 + d0 * d0);
-		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) { // distance attack animation begins base: > 0f
+		if (getAttackAnim(event.getPartialTick()+2) > 0f && !this.swinging) { // distance attack animation begins base: > 0f
 			this.swinging = true;
 			this.lastSwing = level.getGameTime();
 		}
