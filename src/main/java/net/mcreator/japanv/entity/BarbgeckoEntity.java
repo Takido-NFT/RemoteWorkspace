@@ -67,7 +67,7 @@ public class BarbgeckoEntity extends Monster implements IAnimatable {
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return (double) (2.0 + entity.getBbWidth() * entity.getBbWidth()); // Distance hurt tick 1.0 instead 4
 			}
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.7));
@@ -153,10 +153,12 @@ public class BarbgeckoEntity extends Monster implements IAnimatable {
 	}
 
 	private <E extends IAnimatable> PlayState attackingPredicate(AnimationEvent<E> event) {
-		double d1 = this.getX() - this.xOld;
-		double d0 = this.getZ() - this.zOld;
+		double d1 = this.getX(10) - this.xOld; //Base: double d1 = this.getX() - this.xOld;
+
+		double d0 = this.getZ(10) - this.zOld; //Base: double d0 = this.getZ() - this.zOld;
+
 		float velocity = (float) Math.sqrt(d1 * d1 + d0 * d0);
-		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) {
+		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) { // distance attack animation begins base: > 0f
 			this.swinging = true;
 			this.lastSwing = level.getGameTime();
 		}

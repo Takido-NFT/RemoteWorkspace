@@ -86,6 +86,7 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
+      "cooked_mutton": "2022-11-27 17:43:06 +0100",
       "beef": "2022-11-26 03:24:37 +0100"
     },
     "done": false

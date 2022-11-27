@@ -81,7 +81,7 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "sourceentity",
+            "name": "entity",
             "type": "entity"
           }
         ]
