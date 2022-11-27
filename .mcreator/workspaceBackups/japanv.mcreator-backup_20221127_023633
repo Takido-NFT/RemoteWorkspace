@@ -36,22 +36,6 @@
       "registry_name": "axelight"
     },
     {
-      "name": "BarbgeckoThisEntityKillsAnotherOne",
-      "type": "procedure",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "barbgecko_this_entity_kills_another_one",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "Barblood",
       "type": "procedure",
       "sortid": 7,
@@ -67,6 +51,38 @@
           {
             "name": "world",
             "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Barbhurted",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbhurted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Barbattack",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbattack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
           }
         ]
       }
